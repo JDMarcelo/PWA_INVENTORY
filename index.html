@@ -11,9 +11,6 @@
 <body>
     <div class="container">
         <h1>Product Inventory</h1>
-        <!-- Example: HTML markup for a custom install button -->
-        <button id="installButton">Install App</button>
-
         <!-- The id attribute is used to uniquely identify each input field
          so that JavaScript code can access their values -->
         <form id="productForm">
@@ -53,12 +50,12 @@
             </tbody>
         </table>
     </div>
-    
+    <button id="installButton">Install App</button>
 </body>
 <script src="script.js"></script>
 <script>
 <!-- Inside your HTML file, typically in the <head> section -->
-  if ('serviceWorker' in navigator) {
+  if ('serviceworker in navigator) {
     navigator.serviceWorker.register('/service-worker.js')
       .then((registration) => {
         console.log('Service Worker registered with scope:', registration.scope);
