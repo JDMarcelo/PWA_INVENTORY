@@ -57,7 +57,6 @@
 <script src="script.js"></script>
 <script>
 <!-- Inside your HTML file, typically in the <head> section -->
-<script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js')
       .then((registration) => {
@@ -67,7 +66,39 @@
         console.error('Service Worker registration failed:', error);
       });
   }
-</script>
+
+    // JavaScript code for showing the install prompt
+let deferredInstallPrompt;
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  // Prevent the browser's default install prompt
+  event.preventDefault();
+  // Store the event for later use
+  deferredInstallPrompt = event;
+  // Display your custom install button or banner
+  showInstallButton();
+});
+
+// Function to show your custom install button or banner
+function showInstallButton() {
+  // Display your custom UI for installing the PWA
+}
+
+// Example: Trigger the install prompt when a button is clicked
+installButton.addEventListener('click', () => {
+  // Show the install prompt
+  deferredInstallPrompt.prompt();
+  // Wait for the user to respond to the prompt
+  deferredInstallPrompt.userChoice.then((choiceResult) => {
+    if (choiceResult.outcome === 'accepted') {
+      console.log('User accepted the install prompt');
+    } else {
+      console.log('User dismissed the install prompt');
+    }
+    // Reset the deferred prompt
+    deferredInstallPrompt = null;
+  });
+});
 
 
 
