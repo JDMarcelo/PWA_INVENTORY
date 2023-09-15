@@ -3,7 +3,7 @@
     "name": "Inventory System App",
     "short_name": "Inventory System",
     "description": "A basic Inventory System application",
-    "start_url": "/",
+    "start_url": "/index.html",
     "background_color": "#2f3d58",
     "theme_color": "#2f3d58",
     "orientation": "any",
