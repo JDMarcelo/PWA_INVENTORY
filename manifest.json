@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "Inventory System App",
+    "short_name": "Inventory System",
+    "description": "A basic Inventory System application",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/images.png",
+            "sizes": "512x512"
+        }
+    ]
+}
