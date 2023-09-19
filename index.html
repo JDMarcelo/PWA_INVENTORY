@@ -50,19 +50,9 @@
    
 </body>
 <script src="script.js"></script>
-<script>
-<!-- Inside your HTML file, typically in the <head> section -->
- if ('serviceWorker' in navigator) {
-  const swPath = '/sw.js'; // Adjust this path as needed
-  navigator.serviceWorker
-    .register(swPath)
-    .then(function (registration) {
-      console.log('Service Worker registered with scope:', registration.scope);
-      console.log('Resolved sw.js path:', registration.installing.scriptURL);
-    })
-    .catch(function (error) {
-      console.error('Service Worker registration failed:', error);
-    });
-}
-    </script>
+<<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+  }
+</script>
 </html>
