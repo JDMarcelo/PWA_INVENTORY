@@ -1,20 +1,16 @@
 {
   "name": "Inventory System",
   "short_name": "Inventory",
-  "icons": [
-    {
-      "src": "/images/icon-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/images/icon-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000"
+  "background_color": "#4db6ac",
+  "theme_color": "#00695c",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "img/icons/icon-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+      }
+  ]
 }
