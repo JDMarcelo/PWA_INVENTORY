@@ -1,10 +1,10 @@
 {
-  "name": "Inventory System",
-  "short_name": "Inventory",
+  "name": "My website",
+  "short_name": "My website",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#4db6ac",
-  "theme_color": "#00695c",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
   "orientation": "portrait-primary",
   "icons": [
     {
@@ -12,5 +12,6 @@
       "type": "image/png",
       "sizes": "96x96"
     }
-  ]
+  ],
+  "scope": "/"
 }
